@@ -1,0 +1,15 @@
+{
+  "name": "puppers-only",
+  "version": "1.0.0",
+  "description": "Three-page website for finding and taking home cute puppers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Eric Humphries",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
+}
