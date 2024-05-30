@@ -1,0 +1,293 @@
+.login-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.col-1-of-2 {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+}
+
+.col-2-of-2 {
+  width: 50%;
+  padding: 20px;
+  /* background-color: coral; */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-img {
+  width: 100%;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+  /* height: 40%; */
+}
+
+.form-logo-box {
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  height: 50px;
+  width: 50px;
+  fill: var(--fuschia);
+}
+
+.form-header h2 {
+  margin-bottom: 20px;
+}
+
+.form-header h4 {
+  font-weight: 100;
+  color: #bbb;
+}
+
+.form-inputs-group {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.checkbox-wrapper {
+  width: 80%;
+  line-height: 14px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.column-1 {
+  color: #bbb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.column-1 input[type='checkbox'] {
+  border-color: #bbb;
+  outline: none;
+
+  margin-right: 6px;
+}
+
+.column-2 {
+  display: flex;
+  align-items: center;
+}
+
+.column-2 a {
+  text-decoration: none;
+  color: var(--fuschia);
+}
+
+.column-2 a:hover {
+  color: var(--fuschia-dk);
+}
+
+.submit-wrapper {
+  width: 80% !important;
+  line-height: 14px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.submit-wrapper input {
+  background-color: #2b96f1;
+  width: 100%;
+  padding: 10px 20px;
+  border: 0.8px solid #bbb;
+  color: #fff;
+}
+
+.submit-wrapper input:hover {
+  background-color: #459eeb;
+}
+
+/* old style  */
+/* .form-input {
+  width: 90%;
+  height: 12%;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 0.8px solid var(--fuschia);
+  z-index: 2;
+} */
+
+/* new style */
+.input-wrapper {
+  position: relative;
+  line-height: 14px;
+  margin: 20px 0px;
+  display: flex;
+  width: 80%;
+  /* border: 0.8px solid var(--fuschia); */
+}
+
+.input-wrapper label {
+  color: #bbb;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  top: 14px;
+  padding: 0 2px;
+  pointer-events: none;
+  background: white;
+  transition: transform 100ms ease;
+  transform: translateY(-20px);
+}
+
+.input-wrapper input {
+  font-size: 13px;
+  color: #555;
+  outline: none;
+  padding: 10px 20px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  position: relative;
+  border-top: 0.8px solid #bbb;
+  border-bottom: 0.8px solid #bbb;
+  border-left: 0.8px solid #bbb;
+  border-right: none;
+  width: 80%;
+}
+
+.input-wrapper input:invalid + label {
+  transform: translateY(0);
+}
+
+/*  make border color blue on input focus  */
+.input-wrapper input:focus,
+input[type='text']:focus ~ button,
+input[type='password']:focus ~ button {
+  border-color: #2b96f1;
+}
+
+/* make icon color match border on input focus */
+input[type='text']:focus ~ button .username-icon,
+input[type='password']:focus ~ button .password-icon {
+  fill: #2b96f1;
+}
+
+.input-wrapper input:focus + label {
+  color: #2b96f1;
+  transform: translateY(-20px);
+}
+
+input[type='text']:focus .username-icon,
+input[type='password']:focus .password-icon {
+  fill: #2b96f1;
+  height: 2rem;
+  width: 2rem;
+}
+
+.input-wrapper button {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  align-items: center;
+  padding-right: 10px;
+  background-color: #fff;
+  border-top: 0.8px solid #bbb;
+  border-bottom: 0.8px solid #bbb;
+  border-left: none;
+  border-right: 0.8px solid #bbb;
+}
+
+.input-wrapper button:hover {
+  background-color: #fff;
+}
+
+/* end of new style */
+
+.username-icon,
+.password-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  /* fill: #bbb; */
+  fill: #bbb;
+}
+
+.google-form-wrapper {
+  width: 80%;
+  line-height: 1.6;
+  margin-top: 50px;
+}
+
+.google-form-wrapper a {
+  border-radius: 3px;
+  border: 0.8px solid #bbb;
+  padding: 10px 10px;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bbb;
+}
+
+.google-form-wrapper a:hover {
+  background-color: lightgray;
+  color: var(--black);
+}
+
+.google-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  fill: url(#gradient-vertical);
+  margin-right: 10px;
+}
+
+.form-footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: var(--black);
+}
+
+.form-footer a {
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: 500;
+  color: var(--fuschia);
+}
+
+.form-footer a:hover {
+  color: var(--fuschia-dk);
+}
+
+#gradient-horizontal {
+  --color-stop-1: red;
+  --color-stop-2: #ffff1c;
+  --color-stop-3: #77e190;
+  --color-stop-4: #00c3ff;
+}
+#gradient-vertical {
+  --color-stop-1: red;
+  --color-stop-2: #ffff1c;
+  --color-stop-3: #77e190;
+  --color-stop-4: #00c3ff;
+}

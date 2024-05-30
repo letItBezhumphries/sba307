@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puppers Only Page</title>
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
     <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0 0;
+        padding: 0 0;
+      }
 
       nav {
         background-color: var(--yellow);
@@ -17,40 +29,71 @@
         justify-content: space-between;
         font-size: 20px;
         color: var(--black);
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
       }
-
-      /* nav h2, nav ul {
-        margin: 0 0;
-        padding: 0 0;
-        display: flex;
-      }
-
-      nav ul  {
-        list-style-type: none;
-        min-width: 35%;
-      } */
     </style>
   </head>
-  <body>
+  <body id="home">
+    <nav class="navbar">
+      <h2 class="navbar-left">
+        <a href="#" class="navbar-link"
+          >Puppers Only
+          <span>!</span>
+        </a>
+        <!-- <span class="logo-box">
+            <img class="logo-box-bg" src="../images/pexels-mark-glancy-721708-1564506.jpeg" alt="puppy in unicorn headgear">
+          </span> -->
+      </h2>
 
-      <nav class="navbar">
-        <h2 class="navbar-left">
-          <a href="#" class="navbar-link">Puppers Only
-            <span>!</span>
-          </a>
-          <span class="logo-box">LOGO HERE</span>
-        </h2>
-        
-        <ul class="navbar-right">
-          <li><a href="#" class="navbar-link">News</a></li>
-          <li><a href="#" class="navbar-link">Adoption</a></li>
-          <li><a href="#" class="navbar-link">Contact</a></li>
-          <li><a href="#" class="navbar-link login">Login</a></li>
-        </ul>
-      </nav>
+      <ul class="navbar-right">
+        <li><a href="#puppies" class="navbar-link">Puppies</a></li>
+        <li><a href="#news" class="navbar-link">News</a></li>
+        <li><a href="#adoption" class="navbar-link">Adoption</a></li>
+        <li><a href="#contact" class="navbar-link">Contact</a></li>
+        <li><a href="#login" class="navbar-link login">Login</a></li>
+      </ul>
+    </nav>
 
+    <div class="hero-banner">
+      <div class="hero-text-board">
+        <h2 class="banner-heading">Take me home please?</h2>
+        <br />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+          nihil, vel maxime magni, aliquam animi perspiciatis repellendus
+          accusantium labore dicta soluta reiciendis.
+        </p>
+        <br />
+        <br />
+        <button>Adopt me</button>
+      </div>
+    </div>
 
-    <main class="main-container">Main Container</main>
+    <section class="cta-section">Call to Action</section>
 
+    <section class="stories-section">
+      <div class="bg-video">
+        <video class="bg-video-content" autoplay muted loop>
+          <source
+            src="../images/5478757-hd_1920_1080_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser is not supported!
+        </video>
+      </div>
+      <div class="story-board">
+        <h4>Want to Adopt a puppy?</h4>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ex
+          esse facilis nobis recusandae et beatae sunt ipsum doloribus neque eum
+          unde officiis, non id atque, sapiente laborum eligendi. Placeat. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Earum qui
+          repellendus eum, explicabo unde voluptas perspiciatis recusandae
+          nesciunt saepe nam eos tempora maxime cupiditate assumenda! Earum
+          nihil alias ab iste.
+        </p>
+      </div>
+    </section>
   </body>
 </html>

@@ -1,0 +1,103 @@
+*,
+body {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --teal: rgba(112, 214, 255, 1);
+  --fuschia: rgba(255, 112, 166, 1);
+  --orange: rgba(255, 151, 112, 1);
+  --melon: rgba(255, 214, 112, 1);
+  --yellow: rgba(233, 255, 112, 1);
+  --black: #423e3b;
+
+  --teal-lt: rgba(140, 245, 250, 1);
+  --fuschia-lt: rgba(255, 135, 205, 1);
+  --orange-lt: rgba(255, 139, 135, 1);
+  --melon-lt: rgba(255, 191, 135, 1);
+  --yellow-lt: rgba(255, 241, 135, 1);
+
+  --teal-dk: rgba(81, 188, 250, 1);
+  --fuschia-dk: rgba(246, 80, 135, 1);
+  --orange-dk: rgba(246, 136, 84, 1);
+  --melon-dk: rgba(246, 211, 84, 1);
+  --yellow-dk: rgba(211, 246, 84, 1);
+
+  /* SCSS Gradient */
+  --gradient-top: linear-gradient(
+    0deg,
+    #70d6ffff,
+    #ff70a6ff,
+    #ff9770ff,
+    #ffd670ff,
+    #e9ff70ff
+  );
+  --gradient-right: linear-gradient(
+    90deg,
+    #70d6ffff,
+    #ff70a6ff,
+    #ff9770ff,
+    #ffd670ff,
+    #e9ff70ff
+  );
+  --gradient-bottom: linear-gradient(
+    180deg,
+    #70d6ffff,
+    #ff70a6ff,
+    #ff9770ff,
+    #ffd670ff,
+    #e9ff70ff
+  );
+  --gradient-left: linear-gradient(
+    270deg,
+    #70d6ffff,
+    #ff70a6ff,
+    #ff9770ff,
+    #ffd670ff,
+    #e9ff70ff
+  );
+  --gradient-top-right: linear-gradient(
+    45deg,
+    #70d6ffff,
+    #ff70a6ff,
+    #ff9770ff,
+    #ffd670ff,
+    #e9ff70ff
+  );
+  --gradient-bottom-right: linear-gradient(
+    135deg,
+    #70d6ffff,
+    #ff70a6ff,
+    #ff9770ff,
+    #ffd670ff,
+    #e9ff70ff
+  );
+  --gradient-top-left: linear-gradient(
+    225deg,
+    #70d6ffff,
+    #ff70a6ff,
+    #ff9770ff,
+    #ffd670ff,
+    #e9ff70ff
+  );
+  --gradient-bottom-left: linear-gradient(
+    315deg,
+    #70d6ffff,
+    #ff70a6ff,
+    #ff9770ff,
+    #ffd670ff,
+    #e9ff70ff
+  );
+  --gradient-radial: radial-gradient(
+    #70d6ffff,
+    #ff70a6ff,
+    #ff9770ff,
+    #ffd670ff,
+    #e9ff70ff
+  );
+  --prompt-font: 'Prompt', sans-serif;
+  --ubuntu-font: 'Ubuntu Sans Mono', monospace;
+  --josefin-font: 'Josefin Sans', sans-serif;
+}

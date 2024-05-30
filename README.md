@@ -28,43 +28,44 @@ The requirements listed below are absolute minimums. Ensure that your website me
 
 ### - HTML Requirements -
 
-__ Have at least three pages.
+() Have at least three pages.
 
-__ Keep the grid system consistent between pages as much as possible.
+() Keep the grid system consistent between pages as much as possible.
 
-__ Use at least ten different HTML tags.
+() Use at least ten different HTML tags.
 
-__ Include at least one table.
+() Include at least one table.
 
-__ Include at least two forms.
+() Include at least two forms.
 
-__ Include at least one dropdown menu.
+() Include at least one dropdown menu.
 
-__ Include at least one of each of the following forms of content:
-  1)Text.
-  2)Images.
-  3)GIFs.
+() Include at least one of each of the following forms of content:
+(√) Text.
+(√) Images.
+() GIFs.
 
-√__Make use of inline, internal, and external styling.
-__ Use five different CSS selectors.
-__ Use colors that complement each other.
+() Make use of inline, internal, and external styling.
+() Use five different CSS selectors.
+(√) Use colors that complement each other.
 
 Coolors is one of many resources that can help you find a color palette.
-√__Use Flexbox and/or the Bootstrap Grid.
-__ Use at least two CSS animations.
+
+(√) Use Flexbox and/or the Bootstrap Grid.
+() Use at least two CSS animations.
 
 ## - Deliverables -
 
 When you have completed your website, submit the following:
 
-__Your completed project in a ZIP file, which should include all HTML files and any external CSS files.
-__ Include a README file that includes:
+() Your completed project in a ZIP file, which should include all HTML files and any external CSS files.
+() Include a README file that includes:
 
-  1) technical specifications
-  2) and a description of your website.
+1. technical specifications
+2. and a description of your website.
 
-__Upload this ZIP file to Canvas.
-__ A GitHub link to your project’s repository.
+**Upload this ZIP file to Canvas.
+** A GitHub link to your project’s repository.
 Include the link to your GitHub account in your README file.
 Upload the GitHub link to this project to Canvas.
 

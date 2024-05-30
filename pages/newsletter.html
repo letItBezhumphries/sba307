@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <div class="newsletter-form">
+      <div
+        class="form-box"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+        "
+      >
+        <div class="text-box">
+          <h2 class="logo">Puppers Only</h2>
+          <h6 class="secondary-heading">If you know you know</h6>
+          <p class="cto">
+            Don't miss your dream puppy! Get updates on newly listed pups and
+            deals to your inbox!
+          </p>
+        </div>
+        <form action="post" class="form-box">
+          <input type="email" placeholder="Your email" name="email" required />
+          <input
+            type="submit"
+            placeholder="Submit"
+            name="submit"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+      <div class="image-box">
+        <img
+          class="newsletter-form-img"
+          src="../images/pexels-mark-glancy-721708-1564506.jpeg"
+          alt="puppy with unicorn hat"
+        />
+      </div>
+    </div>
+  </body>
+</html>

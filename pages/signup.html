@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup page</title>
+    <!-- <link rel="stylesheet" href="../styles/default.css" /> -->
+    <link rel="stylesheet" href="../styles/signup.css" />
+  </head>
+  <body>
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      style="width: 0; height: 0; position: absolute;"
+    >
+      <linearGradient id="gradient-horizontal">
+        <stop offset="10%" stop-color="var(--color-stop-1)" />
+        <stop offset="25%" stop-color="var(--color-stop-2)" />
+        <stop offset="50%" stop-color="var(--color-stop-3)" />
+        <stop offset="100%" stop-color="var(--color-stop-4)" />
+      </linearGradient>
+      <linearGradient id="gradient-vertical" x2="0" y2="1">
+        <stop offset="0%" stop-color="var(--color-stop-1)" />
+        <stop offset="25%" stop-color="var(--color-stop-2)" />
+        <stop offset="50%" stop-color="var(--color-stop-3)" />
+        <stop offset="75%" stop-color="var(--color-stop-4)" />
+      </linearGradient>
+    </svg>
+    <section id="signup" class="signup-page">
+      <form action="#" class="signup-form col-1-of-2">
+        <div class="form-header">
+          <div class="form-logo-box">
+            <svg class="logo-icon">
+              <use xlink:href="../images/sprite.svg#icon-paw"></use>
+            </svg>
+          </div>
+          <h2 class="header-primary">
+            Sign up
+          </h2>
+        </div>
+        <div class="form-inputs-group">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              style="width: 100%; border-radius: 4px; border: 0.8px solid #bbb;"
+            />
+            <label for="name">Name</label>
+          </div>
+
+          <div class="input-wrapper">
+            <input type="text" name="username" id="username" required />
+            <label for="username">Email</label>
+            <button class="username-button">
+              <svg class="username-icon">
+                <use
+                  xlink:href="../images/sprite.svg#icon-alternate_email"
+                ></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="input-wrapper">
+            <input type="password" name="password" id="password" required />
+            <label for="password">Password</label>
+            <button class="password-button">
+              <svg class="password-icon">
+                <use xlink:href="../images/sprite.svg#icon-lock1"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="input-wrapper">
+            <input type="password" name="password" id="password" required />
+            <label for="password">Re-enter Password</label>
+            <button class="password-button">
+              <svg class="password-icon">
+                <use xlink:href="../images/sprite.svg#icon-lock1"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <div class="column-1">
+              <input type="checkbox" name="readPrivacy" id="readPrivacy" />
+              <p>
+                I've read and agree with terms of service and our Privacy policy
+              </p>
+            </div>
+          </div>
+
+          <div class="submit-wrapper">
+            <input
+              type="submit"
+              value="Signup"
+              placeholder="Create an account"
+            />
+          </div>
+
+          <div class="social-wrapper">
+            <p>Or connect with</p>
+            <div class="social-links-list">
+              <a href="#" class="social-link">
+                <svg
+                  class="google-icon"
+                  fill="url(#gradient-vertical);"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="../images/sprite.svg#icon-google"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg class="apple-icon">
+                  <use xlink:href="../images/sprite.svg#icon-appleinc"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg class="facebook-icon">
+                  <use xlink:href="../images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="form-footer">
+          <p>
+            <span>Already have an account?</span>
+            <a href="#signin" class="signin-form-link">Sign in</a>
+          </p>
+        </div>
+      </form>
+      <div class="col-2-of-2">
+        <img
+          src="../images/pexels-mark-glancy-721708-1564506.jpeg"
+          alt="cute puppy"
+          class="form-img"
+        />
+      </div>
+    </section>
+  </body>
+</html>
