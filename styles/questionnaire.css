@@ -1,0 +1,80 @@
+.cta-form-container {
+  background: var(--gradient-bottom-right);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-form-container h2 {
+  width: 80%;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: var(--black);
+  text-shadow: 2px 4px var(--teal);
+}
+
+.cta-form-container p {
+  font-size: 18px;
+  color: var(--black);
+}
+
+.cta-form {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cta-form h4 {
+  font-size: 20px;
+  border-bottom: 1px solid var(--teal);
+}
+
+.form-inputs {
+  /* background-color: ; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-inputs label {
+  margin-bottom: 5px;
+}
+
+.form-inputs select {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.checkbox-input-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+input[type='submit'] {
+  width: 60%;
+  height: 50px;
+  padding: 10px;
+  background-color: var(--fuschia);
+  color: var(--yellow);
+  border: 1.5px solid var(--teal);
+  letter-spacing: 1.5px;
+  box-shadow: var(--shadow-md);
+}
+
+input[type='submit']:hover {
+  width: 60%;
+  height: 50px;
+  padding: 10px;
+  background-color: var(--fuschia-dk);
+  color: var(--yellow-dk);
+  border: 1.5px solid var(--teal-dk);
+  letter-spacing: 1.5px;
+  transform: translateY(-2.5px);
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5);
+}

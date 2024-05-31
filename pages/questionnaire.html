@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pupper Control Form</title>
+    <link rel="stylesheet" href="../styles/default.css" />
+    <link rel="stylesheet" href="../styles/questionnaire.css" />
+  </head>
+  <body>
+    <section class="cta-form-container">
+      <h2>Want a new best friend?</h2>
+
+      <form action="post" class="cta-form">
+        <h4>
+          Help us narrow down your puppers search?
+        </h4>
+        <div class="form-inputs">
+          <label for="Yard">Do you have a yard?</label>
+          <select name="yard" id="Yard">
+            <option value="">Select An Option</option>
+            <option value="Y">Yes</option>
+            <option value="N">No</option>
+          </select>
+
+          <label for="Property">Property Type</label>
+          <select name="yard" id="Yard">
+            <option value="">Select An Option</option>
+            <option value="Y">Yes</option>
+            <option value="N">No</option>
+          </select>
+
+          <label for="Children">Children?</label>
+          <select name="children" id="Children">
+            <option value="">Select An Option</option>
+            <option value="Y">Yes</option>
+            <option value="N">No</option>
+          </select>
+
+          <label for="OtherPets">Other dogs or pets?</label>
+          <select name="pets" id="OtherPets">
+            <option value="">Select An Option</option>
+            <option value="Y">Yes</option>
+            <option value="N">No</option>
+          </select>
+
+          <label for="Allergies"
+            >Does anyone in house have allergies to dogs?</label
+          >
+          <select name="allergies" id="Allergies">
+            <option value="">Select An Option</option>
+            <option value="Y">Yes</option>
+            <option value="N">No</option>
+          </select>
+
+          <div class="checkbox-input-container">
+            <input type="checkbox" name="consent" id="Consent" />
+            <span
+              >I consent that I have never been criminally convicted nor am I
+              under investigation for any offense related to abuse, animal
+              cruelty or negligence.</span
+            >
+          </div>
+          <input type="submit" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

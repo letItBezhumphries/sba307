@@ -1,10 +1,3 @@
-*,
-body {
-  margin: 0 0;
-  padding: 0 0;
-  box-sizing: border-box;
-}
-
 :root {
   --teal: rgba(112, 214, 255, 1);
   --fuschia: rgba(255, 112, 166, 1);
@@ -100,4 +93,5 @@ body {
   --prompt-font: 'Prompt', sans-serif;
   --ubuntu-font: 'Ubuntu Sans Mono', monospace;
   --josefin-font: 'Josefin Sans', sans-serif;
+  --shadow-md: 2px 4px 6px rgba(0, 0, 0, 0.5);
 }

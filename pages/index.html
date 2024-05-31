@@ -10,68 +10,74 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../styles/default.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <style>
+      *,
       body,
       html {
-        height: 100%;
+        box-sizing: border-box;
         margin: 0 0;
         padding: 0 0;
-      }
-
-      nav {
-        background-color: var(--yellow);
-        display: flex;
-        margin: 0 0;
-        padding: 0 0;
-        height: 20vh;
-        display: flex;
-        justify-content: space-between;
-        font-size: 20px;
-        color: var(--black);
-        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
       }
     </style>
   </head>
   <body id="home">
-    <nav class="navbar">
-      <h2 class="navbar-left">
-        <a href="#" class="navbar-link"
-          >Puppers Only
-          <span>!</span>
-        </a>
-        <!-- <span class="logo-box">
-            <img class="logo-box-bg" src="../images/pexels-mark-glancy-721708-1564506.jpeg" alt="puppy in unicorn headgear">
-          </span> -->
-      </h2>
-
-      <ul class="navbar-right">
-        <li><a href="#puppies" class="navbar-link">Puppies</a></li>
-        <li><a href="#news" class="navbar-link">News</a></li>
-        <li><a href="#adoption" class="navbar-link">Adoption</a></li>
-        <li><a href="#contact" class="navbar-link">Contact</a></li>
-        <li><a href="#login" class="navbar-link login">Login</a></li>
-      </ul>
-    </nav>
-
     <div class="hero-banner">
+      <div class="navbar-container">
+        <nav class="navbar">
+          <h2 class="navbar-left">
+            <a href="#" class="navbar-link">Puppers Only </a>
+          </h2>
+
+          <ul class="navbar-right">
+            <li>
+              <div class="dropdown">
+                <button class="dropdown-btn">
+                  <a href="puppies.html" class="navbar-link">Puppies </a>
+                  <svg class="drop-icon">
+                    <use
+                      xlink:href="../images/sprite.svg#icon-arrow_drop_down"
+                    ></use>
+                  </svg>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#" class="dropdown-link">Small Dogs</a>
+                  <a href="#" class="dropdown-link">Big Dogs</a>
+                  <a href="#" class="dropdown-link">Mixed</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="about.html" class="navbar-link">About</a></li>
+            <li><a href="#adoption" class="navbar-link">Adoption</a></li>
+            <li><a href="#contact" class="navbar-link">Contact</a></li>
+            <li><a href="login.html" class="navbar-link login">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <div class="hero-text-board">
-        <h2 class="banner-heading">Take me home please?</h2>
-        <br />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
-          nihil, vel maxime magni, aliquam animi perspiciatis repellendus
-          accusantium labore dicta soluta reiciendis.
-        </p>
-        <br />
-        <br />
-        <button>Adopt me</button>
+        <h2 class="heading-primary">
+          Looking for your Perfect Puppy match ?
+        </h2>
+
+        <h4 class="heading-secondary">
+          It's easy and takes two shakes of puppy's tail
+        </h4>
+
+        <button>
+          <a href="questionnaire.html" class="cta-link">Get Started</a>
+        </button>
+      </div>
+
+      <div class="search-bar">
+        <svg class="search-icon">
+          <use xlink:href="../images/sprite.svg#icon-search"></use>
+        </svg>
       </div>
     </div>
 
-    <section class="cta-section">Call to Action</section>
-
-    <section class="stories-section">
+    <section class="about-section">
       <div class="bg-video">
         <video class="bg-video-content" autoplay muted loop>
           <source
@@ -81,7 +87,7 @@
           Your browser is not supported!
         </video>
       </div>
-      <div class="story-board">
+      <div class="about-board">
         <h4>Want to Adopt a puppy?</h4>
 
         <p>
@@ -93,7 +99,391 @@
           nesciunt saepe nam eos tempora maxime cupiditate assumenda! Earum
           nihil alias ab iste.
         </p>
+
+        <h6>
+          Follow our Easy Adoption steps
+        </h6>
       </div>
     </section>
+
+    <section class="puppies">
+      <div class="row puppy-row">
+        <div class="puppy-card">
+          <img src="../images/pexels-jhelmuth-3726314.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Snickers</h4>
+            <p>Male, <strong>7 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="puppy-card">
+          <img src="../images/pexels-hannaauramenka-8497489.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Joe</h4>
+            <p>Male, <strong>8 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="puppy-card">
+          <img src="../images/pexels-pixabay-257519.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Pepper</h4>
+            <p>Female, <strong>4 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="puppy-card">
+          <img
+            src="../images/pexels-wildlittlethingsphoto-1790446.jpeg"
+            alt=""
+          />
+          <div class="puppy-info">
+            <h4>Sassy</h4>
+            <p>Male, <strong>7 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row puppy-row">
+        <div class="puppy-card">
+          <img src="../images/pexels-pixabay-59965.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Charlie</h4>
+            <p>Male, <strong>10 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="puppy-card">
+          <img src="../images/pexels-poodles2doodles-1458915.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Kesha</h4>
+            <p>Female, <strong>11 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="puppy-card">
+          <img src="../images/pexels-poodles2doodles-1458925.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Sheila</h4>
+            <p>Female, <strong>7 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="puppy-card">
+          <img src="../images/pexels-brett-sayles-1346086.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Maria</h4>
+            <p>Female, <strong>11 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row puppy-row">
+        <div class="puppy-card">
+          <img src="../images/pexels-jaydenburdick-9942475.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Skip</h4>
+            <p>Male, <strong>12 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="puppy-card">
+          <img src="../images/pexels-nishantaneja-4203281.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Kayelin</h4>
+            <p>Female, <strong>13 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="puppy-card">
+          <img src="../images/pexels-punchbrandstock-4490129.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Zuanna</h4>
+            <p>Male, <strong>10 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="puppy-card">
+          <img src="../images/pexels-steshkawillems-1407718.jpeg" alt="" />
+          <div class="puppy-info">
+            <h4>Chester</h4>
+            <p>Male, <strong>7 Weeks</strong></p>
+            <div class="card-footer">
+              <a href="#" class="more-link">
+                Learn More
+                <svg class="more-icon">
+                  <use
+                    xlink:href="../images/sprite.svg#icon-chevron-right"
+                  ></use>
+                </svg>
+              </a>
+              <span style="margin-right: 5px;">
+                <svg class="heart-icon">
+                  <use xlink:href="../images/sprite.svg#icon-heart"></use>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="breeds-section">
+      <table>
+        <caption>
+          Find a pupper from our reputable breeders ?
+        </caption>
+        <tr>
+          <td><a href="#puppies">American Bully</a></td>
+          <td><a href="#puppies">Aussiedoodle</a></td>
+          <td><a href="#puppies">Australian Shepherd</a></td>
+          <td><a href="#puppies">Basset Hound</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Beagle</a></td>
+          <td><a href="#puppies">Bernese Mountain Dog</a></td>
+          <td><a href="#puppies">Bichon Frise</a></td>
+          <td><a href="#puppies">Border Collie</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Boston Terrier</a></td>
+          <td><a href="#puppies">Boxer</a></td>
+          <td><a href="#puppies">Cavalier King Charles</a></td>
+          <td><a href="#puppies">Cavapoo</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Chihuahua</a></td>
+          <td><a href="#puppies">Cockapoo</a></td>
+          <td><a href="#puppies">Cocker Spaniel</a></td>
+          <td><a href="#puppies">English Bulldog</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">French Bulldog</a></td>
+          <td><a href="#puppies">Frenchton</a></td>
+          <td><a href="#puppies">German Shepherd</a></td>
+          <td><a href="#puppies">Golden Retriever</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Goldendoodle</a></td>
+          <td><a href="#puppies">Great Dane</a></td>
+          <td><a href="#puppies">Havanese</a></td>
+          <td><a href="#puppies">Italian Greyhound</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Labradoodle</a></td>
+          <td><a href="#puppies">Labrador Retriever</a></td>
+          <td><a href="#puppies">Maltese</a></td>
+          <td><a href="#puppies">Maltipoo</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Mini Bernedoodle</a></td>
+          <td><a href="#puppies">Mini Dachshund</a></td>
+          <td><a href="#puppies">Mini Goldendoodle</a></td>
+          <td><a href="#puppies">Mini Australian Shepherd</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Miniature Poodle</a></td>
+          <td><a href="#puppies">Miniature Schnauzer</a></td>
+          <td><a href="#puppies">Morkie / Yorktese</a></td>
+          <td><a href="#puppies">Pembroke Welsh Corgi</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Pomeranian</a></td>
+          <td><a href="#puppies">Pomsky</a></td>
+          <td><a href="#puppies">Pug</a></td>
+          <td><a href="#puppies">Puggle</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Schnoodle</a></td>
+          <td><a href="#puppies">Shiba Inu</a></td>
+          <td><a href="#puppies">Shih Tzu</a></td>
+          <td><a href="#puppies">Shih-Poo</a></td>
+        </tr>
+        <tr>
+          <td><a href="#puppies">Siberian Husky</a></td>
+          <td><a href="#puppies">Standard Poodle</a></td>
+          <td><a href="#puppies">Toy Poodle</a></td>
+          <td><a href="#puppies">Yorkie</a></td>
+        </tr>
+      </table>
+    </section>
+    <footer>
+      <ul class="bottom-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Find your dream pupper</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Rate & Review Breeder</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact Breeders</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Start Adoption Processs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Come work with us!</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        &copy; Copyright 2024 by Eric Humphries.
+      </p>
+    </footer>
   </body>
 </html>
